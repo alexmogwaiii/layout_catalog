@@ -1,18 +1,11 @@
 .catalog {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $cardWidth);
+  justify-items: center;
+  justify-content: center;
+  grid-gap: 50px 48px;
 
   &__product-card {
     width: $cardWidth;
-    flex-shrink: 0;
-  }
-
-  &__product-card:nth-child(4n+4) {
-    margin-right: 0;
-  }
-
-  &__product-card:nth-child(-n+4) {
-    margin-bottom: 50px;
   }
 }

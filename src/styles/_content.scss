@@ -1,8 +1,7 @@
 .content {
-  display: flex;
-  justify-content: center;
   
   &__catalog {
     max-width: $contentWidth - $contentHorPad;
+    margin: 0 auto;
   }
 }
